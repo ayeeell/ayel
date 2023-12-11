@@ -11,6 +11,10 @@
   font-family: "CCElephantmenGreatW10-Rg";
   src: url(fonts/CCElephantmenGreat.ttf) format("truetype");
 }
+@font-face {
+  font-family: "impact";
+  src: url(fonts/impact.ttf) format("truetype");
+}
 .container {
     width: 100%;
     min-height: 100vh;
