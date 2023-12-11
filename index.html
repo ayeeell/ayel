@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ayel</title>
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?
+		family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="navbar">
+				<img src="images/logo1.png" class="logo" onclick="location.href='index.html'">
+				<nav>
+				<ul id="menuList">
+					<li><a href="index.html" style="color: #f7bb01; font-family: Impact; font-size: 25px;">HOME</a></li>
+					<li><a href="projects.html" style="color: #050060; font-family: Impact; font-size: 25px;">PROJECTS</a>
+					</li>
+					<li><a href="about.html" style="color: #050060; font-family: Impact; font-size: 25px;">ABOUT</a></li>
+					<li><a href="resume.html" style="color: #050060; font-family: Impact; font-size: 25px;">RESUME</a></li>					
+					<li><a href="contact.html" style="color: #050060; font-family: Impact; font-size: 25px;">CONTACT</a></li>
+				</ul>
+			</nav>
+
+				<img src="images/menu1.png" class="menu-icon" onclick="togglemenu()">
+			</div>
+				<div id="home">
+					<div id="home1">
+						<h3>Hello! It's me</h3>
+						<img src="images/cline1.png" class="cline1">
+						<h1>Lei Andrie.</h1>
+						<button type="button" onclick="location.href='ABOUT.html'">Know About Me!</button>
+					</div>
+					<div id="home2">
+						<img src="images/Ayel.png" class="ayel">
+						<img src="images/AyelB.png" class="ayelb" alt="ayelb">
+					</div>
+				</div>
+		</div>
+
+		</div>
+
+		<script>
+			
+			var menuList = document.getElementById("menuList")
+			menuList.style.maxHeight ="0px";
+			function togglemenu(){
+				if(menuList.style.maxHeight=="0px")
+				{
+					menuList.style.maxHeight="220px"
+				}
+				else
+					{
+					menuList.style.maxHeight="0px"
+				}
+			}
+
+  			document.addEventListener('DOMContentLoaded', function () {
+    				var ayel = document.querySelector('.ayel');
+    				var ayelb = document.querySelector('.ayelb');
+
+    				ayelb.addEventListener('mouseover', function () {
+      				ayel.style.opacity = 0;
+    				});
+
+    				ayelb.addEventListener('mouseout', function () {
+      				ayel.style.opacity = 1;
+    				});
+  				});
+		</script>
+
+</body>
+</html>
